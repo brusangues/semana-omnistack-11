@@ -1,0 +1,80 @@
+AULA 1
+
+back end:
+    regras de negócio
+    envio de email
+    comunicação com outros serviços
+    banco de dados
+    autenticação de usuários
+    criptografia e segurança
+    coração da aplicação
+    Pode servir web, mobile ou serviços externos através de json
+
+API:
+    Não tem parte visual
+    Restful - padrões
+
+Hello world(...)
+
+React:
+    Abordagem tradicional
+        Backend Gera um html completo
+        Limita a natureza do front end
+    Abordagem SPA
+        Single page applications
+        Backend retorna json
+        Página não recarrega (não requer do backend)
+        *react native fica no front
+
+AULA 2
+
+React:
+    Abordagem tradicional de app
+        Um pra ios e um pra android
+    Abordagem híbrida react native
+        Mesma aplicação para ambos
+        JScore é instalado nos celulares
+            entendem o código JS
+            Código desenvolvido em JS não é convertido antes
+        Interface nativa, performance muito boa
+
+Expo:
+    framework para react native
+    conjunto de bibliotecas para utilidades do celular
+    Não é necessário instalar SDK nem coisas pra IOS
+    Só nos preocupamos com o código JS
+        Para criar o app, instala-se o expo no celular
+
+Banco de dados:
+    2 principais alternativas: SQL ou noSQL (não rel.)
+    Utilizaremos SQLite
+        Mais utilizado de todos
+        Estrutura melhor nos dados
+        Armazenado inteiro como um arquivo
+    Como fazer a comunicação
+        Instalar driver: SELECT * FROM users
+        Query Builder: table('users').select('*').where()
+            Knex js Utilizaremos
+    
+Entidades e funcionalidades da aplicação:
+    Caso o layout já esteja disponível (protótipo pronto)
+    Entidades:
+        Tudo aquilo que representa algo que será salvo no db
+        -ONG que realiza cadastro login registra casos
+        -Casos (incident)
+    Funcionalidades (de cada entidade):
+        -login de ONG
+        -cadastro de ONG
+        -logout de ONG
+        -cadastrar novos casos
+        -deletar casos
+        -listar casos específicos de uma ONG
+        -listar todos os casos
+        -entrar em contato com a ONG
+
+Criar tabelas no DB para armazenar:
+    Migrations - criar tabelas e manter versionamento
+
+Abstrair rotas para um novo arquivo
+    
+
