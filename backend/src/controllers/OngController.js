@@ -1,7 +1,7 @@
 // Para a conexão com o BD
 const connection = require('../database/connection');
 // Para criação do ID criptografado
-const crypto = require('crypto');
+const generateUniqueId = require('../utils/generateUniqueId');
 
 module.exports = {
     async index(request, response) {
@@ -18,7 +18,7 @@ module.exports = {
         const {name, email, whatsapp, city, uf} = request.body;
 
         //Gera 4 bytes de letras que será utilizado como ID
-        const id = crypto.randomBytes(4).toString('HEX');
+        const id = generateUniqueId();
 
         //Conexão com BD
         //Operação insert pode demorar, e precisamos retornar só depois dele ser utilizado.

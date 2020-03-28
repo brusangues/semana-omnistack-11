@@ -4,4 +4,7 @@
 *.mp4
 .mp4
 
+*.pdf
+.pdf
+
 node_modules/**/*

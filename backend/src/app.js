@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors'); //importando cors que define quem pode acessar a aplicação
 const routes = require('./routes.js'); // ponto barra para entender como arquivo e não pacote
 const app = express();
+const {errors} = require('celebrate'); //validação de erros
 
 app.use(cors())// Permite que todas as aplicações frontend possam acessar esse backend
     //para restringir, fariamos cors({origin:'http://meuapp.com'})
@@ -9,6 +10,7 @@ app.use(cors())// Permite que todas as aplicações frontend possam acessar esse
 // antes de todas as requisições, converter Json em objeto do JS
 app.use(express.json());
 app.use(routes);
+app.use(errors());
 
 //Criação da primeira rota
 // rota = endereço completo; recurso = /user
@@ -42,8 +44,4 @@ Parâmetros
 *   Para acessar: app.post('/users'... const body = request.body;
 */
 
-
-
-//Aplicação criada
-app.listen(3333);
-    //localhost:3333
+module.exports = app;

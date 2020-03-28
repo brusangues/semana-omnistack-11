@@ -82,6 +82,31 @@ AULA 3
 Expo:
     
 AULA 5
-
+    Celebrate integra Joi(bib de validação) com Express(framework do node)
+    Qual rotas validar? Criação e alteração.
+        Listagem é bom, caso haja algum parâmetro vindo do usuário.
+    error code 500 deve ser evitado, significa que nossa aplicação não soube lidar internamente
+    Testes
+        TDD - test driven development
+            2 formas de teste: com o código todo ou criar teste antes
+            teste funciona como se fosse um guia
+            ao satisfazer todos os testes, a funcionalidade está concluída
+        Jest - framework de testes para aplicação inteira
+    Deploy Backend
+        App experimental: hospedar no heroku
+        Comercial pequena: digital ocean
+        Comercial enorme: aws, azure, google cloud
+    Deploy Frontend
+        App experimental e pequena: netlify
+    Deploy mobile 
+        Gerando apk e ipa com o Expo
+    Estudos daqui pra frente
+        Padrões de código: ESlint, prettier
+        Autenticação JWT
+        Ferramenta para estilização Styled components
+    Dicas para aproveitar melhor:
+        Colocar tudo no github
+        Post no linkedin
+        
 
 
